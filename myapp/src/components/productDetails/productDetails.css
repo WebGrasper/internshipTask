@@ -78,7 +78,7 @@
   align-items: center; /* Vertically center the content */
   justify-content: center;
   color: white;
-  padding: 14px 6px;
+  padding: 16px 6px;
   border-radius: 2px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   width: 200px;
@@ -141,4 +141,244 @@
 .share-heading{
     font-size: 16px;
     padding-bottom: 2px;
+}
+
+.basic-details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name{
+    color: #878787;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-description{
+    color: #212121;
+    padding: 0;
+    line-height: 1.4;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.special-tag{
+    color: #26a541;
+    font-weight: 500;
+    margin-top: 6px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.prices{
+    display: flex;
+    padding-top: 8px!important;
+    align-items: baseline;
+}
+
+.discounted-price, .regular-price, .discount-percent{
+    margin-right: 10px;
+}
+
+.discounted-price{
+    font-size: 28px;
+    font-weight: 500;
+    color: #212121;
+}
+.regular-price{
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #878787;
+}
+
+.discount-percent{
+    color: #26a541;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rating-container{
+    display: flex;
+    align-items: baseline;
+    margin-top: 6px;
+}
+
+.average-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 7px;
+    border-radius: 14px;
+    font-size: 16px;
+    background-color: #26a541;
+    color: white;
+    margin-right: 10px;
+}
+
+.star-icon{
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.number-of-rating-and-reviews{
+    font-size: 16px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.offers-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.avail-offer-heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+    margin-top: 10px;
+}
+
+.sell-icon{
+    font-size: 16px;
+    margin-right: 10px;
+    color: #26a541;
+}
+
+.offers{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: baseline;
+}
+.offer-type, .offer-description{
+    color: #212121;
+    font-weight: 500;
+    padding-right: 4px;
+    font-size: 14px;
+}
+.offer-description{
+    line-height: 1.43;
+    font-weight: 400;
+}
+.offer-TC{
+    color: #2874f0;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.availability-check-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.sub-1-availablity-check-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-icon-container{
+    display: flex;
+    align-items: center;
+}
+.location-icon{
+    color: #2874f0;
+    font-size: 18px;
+}
+.location-deliever-heading{
+    font-weight: 500;
+    color: #878787;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.location-area-input{
+    display: flex;
+    margin-top: 20px;
+}
+.location-input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2874f0;
+    padding-bottom: 7px;
+    font-weight: 500;
+}
+.location-input::placeholder{
+    color: #878787;
+}
+.location-input::-webkit-inner-spin-button,
+.location-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.location-submit-button{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2874f0;
+    background: transparent;
+    padding-bottom: 7px;
+    color: #878787;
+}
+
+.service-check-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delivery-date-description{
+    font-size: 14px;
+    font-weight: 500;
+}
+.free-keyword{
+    margin-left: 6px;
+    color: #26a541;
+}
+.off-40{
+    margin-left: 6px;
+    color: #878787;
+    text-decoration: line-through;
+}
+.delivery-time-keyword{
+    font-size: 12px;
+    font-weight: 400;
+}
+.service-keyword{
+    color: #878787;
+    width: 110px;
+    padding-right: 10px;
+    float: left;
+    font-weight: 500;
+}
+.rupee-icon{
+    font-size: 16px;
+    margin-right: 4px;
+}
+.cash-on-delivery-keyword{
+    font-size: 14px;
+}
+.cash-on-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-2-availability-check-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.delivery-date-and-time{
+    display: flex;
+    flex-direction: column;
+}
+.delivery-date-container{
+    display: flex;
+}
+.delivery-off{
+    display: flex;
+}
+.view-detail-tag{
+    margin-top: 20px;
+    color: #2874f0;
+    font-size: 14px;
+    font-weight: 500;
 }
