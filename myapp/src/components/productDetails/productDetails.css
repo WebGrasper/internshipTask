@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    padding: 3rem 2rem 3rem 2rem;
+    /* padding-left: 3rem;
+    padding-top: 2rem; */
+    column-gap: 20px;
+}
+
+
+.container-1 {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.container-2{
+    flex-basis: 75%;
+}
+/* .container-1, .container-2{
+    flex-grow: 0;
+	flex-shrink: 0;
+} */
+
+
+.main-container-1-images{
+    display: flex;
+}
+
+.sub-container-1-images{
+    display: flex;
+    column-gap: 10px;
+}
+
+.sub-images-container, .main-image-container{
+    flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.sub-images-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main-image-container{
+    display: flex;
+}
+
+.main-container-1-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-images{
+    width: 45px;
+}
+
+.main-image{
+    width: 350px;
+}
+
+.main-container-1-button-1{
+    background-color: #ff9f00;
+}
+.main-container-1-button-2{
+    background-color: #fb641b;
+}
+
+.main-container-1-button-1,
+.main-container-1-button-2 {
+  display: flex; /* Add flex display */
+  align-items: center; /* Vertically center the content */
+  justify-content: center;
+  color: white;
+  padding: 14px 6px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  border: none;
+  float: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Add styles for the Google icon (adjust the icon size as needed) */
+.shopping{
+  font-size: 20px; /* Adjust the size as needed */
+  margin-right: 10px; /* Add some space between the icon and text */
+}
+
+/* ------------------------------------ */
+
+.main-routes-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.routes-container{
+    display: flex;
+}
+
+.navigator-container{
+    display: flex;
+    align-items: center;
+    size: 5px;
+}
+
+.navigator-location{
+    font-size: 12px;
+    color: #878787;
+}
+
+.right-arrow{
+    font-size: 16px; /* Adjust the size as needed */
+    margin-left: 5px; /* Add some space between the icon and text */
+    margin-right: 5px; /* Add some space between the icon and text */
+    color: #878787;
+}
+
+.share-button-container{
+    display: flex;
+    align-items: center;
+}
+
+.share-icon{
+    font-size: 16px;
+    margin-left: 10px; /* Add some space between the icon and text */
+    margin-right: 10px; /* Add some space between the icon and text */
+    color: #878787;
+}
+
+.share-heading{
+    font-size: 16px;
+    padding-bottom: 2px;
+}
