@@ -382,3 +382,53 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+.color-selector-image img{
+    height: 72px;
+    width: 60px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.color-selector-image img:hover{
+    border: 2px solid #2874f0;
+    cursor: pointer;
+}
+
+
+.variants-and-size-container-color{
+    display: flex;
+    margin: 14px 0px;
+    justify-content: flex-start;
+}
+.variants-and-size-container-color span{
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #878787;
+    width: 110px;
+    min-width: 110px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.sub-images:hover{
+border: 2px solid #2874f0;
+}
+
+.size-selector-div{
+    padding: 6px 10px;
+    border: 2px solid #e0e0e0;
+    font-weight: 500;
+    margin-right: 14px;
+}
+.size-selector-div:hover{
+    cursor: pointer;
+}
+.adjust{
+    margin-top: 0px;
+}
+#blue-effect{
+    border-style: dotted ;
+    opacity: .50;
+}
