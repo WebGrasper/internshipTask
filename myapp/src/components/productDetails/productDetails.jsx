@@ -1,7 +1,7 @@
 import "./productDetails.css";
 
 export default function ProductDetails() {
-  const changeMainImage = (e) => {
+  const changeMainImage = (e) => { 
     const source = e.target.src;
     const mainImageElement = document.querySelector(".main-image");
     mainImageElement.src = source;
