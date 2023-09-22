@@ -1,6 +1,11 @@
 import "./productDetails.css";
 
 export default function ProductDetails() {
+  const changeMainImage = (e) => {
+    const source = e.target.src;
+    const mainImageElement = document.querySelector(".main-image");
+    mainImageElement.src = source;
+  }
   return (
     <div className="main-container">
       {/* ------------------------------------left Container start------------------------------------ */}
@@ -8,12 +13,24 @@ export default function ProductDetails() {
         <div className="main-container-1-images">
           <div className="sub-container-1-images">
             <div className="sub-images-container">
-              <img className="sub-images" src="/images/i11.webp" alt="" />
-              <img className="sub-images" src="/images/i12.webp" alt="" />
-              <img className="sub-images" src="/images/i13.webp" alt="" />
+              <img className="sub-images" id="p01" src="/images/i11.webp" onClick={(e)=>{
+                 const source = e.target.src;
+                 const mainImageElement = document.querySelector(".main-image");
+                 mainImageElement.src = source;
+              }}  alt="" />
+              <img className="sub-images" id="p02" src="/images/i12.webp" onClick={(e)=>{
+                 const source = e.target.src;
+                 const mainImageElement = document.querySelector(".main-image");
+                 mainImageElement.src = source;
+              }}  alt="" />
+              <img className="sub-images" id="p03" src="/images/i13.webp" onClick={(e)=>{
+                 const source = e.target.src;
+                 const mainImageElement = document.querySelector(".main-image");
+                 mainImageElement.src = source;
+              }}  alt="" />
             </div>
             <div className="main-image-container">
-              <img className="main-image" src="/images/i11.webp" alt="" />
+              <img className="main-image" src="/images/i11.webp"  alt="" />
             </div>
           </div>
         </div>
@@ -107,7 +124,41 @@ export default function ProductDetails() {
           </div>
         </div>
 
-        <div className="variants-and-size-container"></div>
+        <div className="variants-and-size-container">
+          <div className="variants-and-size-container-color">
+          <span>Color</span>
+          <div className="color-selector-image"><img src="/images/i11.webp" onClick={(e)=>{
+            const sourceParent = e.target.src;
+            document.querySelector("#p01").src = "/images/i11.webp";
+            document.querySelector("#p02").src = "/images/i12.webp";
+            document.querySelector("#p03").src = "/images/i13.webp";
+            document.querySelector(".main-image").src = sourceParent;
+          }} alt="" srcset="" /></div>
+          <div className="color-selector-image"><img src="/images/i21.webp" onClick={(e)=>{
+            const sourceParent = e.target.src;
+            document.querySelector("#p01").src = "/images/i21.webp";
+            document.querySelector("#p02").src = "/images/i22.webp";
+            document.querySelector("#p03").src = "/images/i23.webp";
+            document.querySelector(".main-image").src = sourceParent;
+          }} alt="" srcset="" /></div>
+          <div className="color-selector-image"><img src="/images/i31.webp" onClick={(e)=>{
+            const sourceParent = e.target.src;
+            document.querySelector("#p01").src = "/images/i31.webp";
+            document.querySelector("#p02").src = "/images/i32.webp";
+            document.querySelector("#p03").src = "/images/i33.webp";
+            document.querySelector(".main-image").src = sourceParent;
+          }} alt="" /></div>
+          </div>
+          <br />
+          <div className="variants-and-size-container-color adjust">
+            <span>Size</span>
+              <div className="size-selector-div">S</div>
+              <div className="size-selector-div" id="blue-effect">M</div>
+              <div className="size-selector-div">L</div>
+              <div className="size-selector-div">XL</div>
+          </div>
+        
+        </div>
 
         <div className="offers-container">
           <p className="avail-offer-heading">Available offers</p>
@@ -129,7 +180,7 @@ export default function ProductDetails() {
             </p>
             <p className="offer-TC">T&C</p>
           </div>
-          <div className="offers">
+          <div className="offers">   
             <span class="material-symbols-outlined sell-icon">sell</span>
             <p className="offer-type">Bank offer</p>
             <p className="offer-description">
