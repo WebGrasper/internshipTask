@@ -38,11 +38,6 @@ body {
 .container-2 {
   flex-basis: 75%;
 }
-/* .container-1, .container-2{
-    flex-grow: 0;
-	flex-shrink: 0;
-} */
-
 .main-container-1-images {
   display: flex;
 }
@@ -455,6 +450,7 @@ body {
   opacity: 0.5;
 }
 
+/* writing the code for css for mobile screen */
 @media only screen and (max-width: 425px) {
   .main-container {
     flex-direction: column;

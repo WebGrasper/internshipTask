@@ -3,11 +3,6 @@ import { useState } from "react";
 import "./productDetails.css";
 
 export default function ProductDetails() {
-  // const changeMainImage = (e) => {
-  //   const source = e.target.src;
-  //   const mainImageElement = document.querySelector(".main-image");
-  //   mainImageElement.src = source;
-  // }
   const [isDark, setDark] = useState(false);
   function myFunction() {
     document.body.classList.toggle("dark-mode");
